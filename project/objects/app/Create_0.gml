@@ -6,6 +6,8 @@ instance_create_layer(0,0,Layer,input)
 instance_create_layer(0,0,Layer,debug)
 instance_create_layer(0,0,Layer,time)
 instance_create_layer(0,0,Layer,sound)
+instance_create_layer(0,0,Layer,userinterface)
+instance_create_layer(0,0,Layer,scenery)
 
 function scale_canvas(new_width, new_height) {
 	window_set_size(new_width, new_height)
@@ -20,8 +22,8 @@ function scale_canvas(new_width, new_height) {
 function cameraSetup() {
 	#region Camera
 
-		width = 640
-		height = 360
+		width = 1280//640
+		height = 720//360
 		zoom_level = 1
 		
 		var fullscreen = false
@@ -120,3 +122,5 @@ function cameraFix() {
 }
 	
 cameraSetup()
+
+room_goto(RoomGame)
