@@ -8,6 +8,8 @@ maxMovespeed = 4
 path = path_add()
 pos = 0
 moving = false
+x_goto = 0
+y_goto = 0
 mask_index = s_unit_collision
 
 function setForce(force, direction) { 
