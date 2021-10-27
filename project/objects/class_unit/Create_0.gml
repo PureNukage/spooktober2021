@@ -5,6 +5,10 @@ vspd = 0
 moveForce = 0
 moveDirection = 0
 maxMovespeed = 4
+path = path_add()
+pos = 0
+moving = false
+mask_index = s_unit_collision
 
 function setForce(force, direction) { 
 	xx = lengthdir_x(force, direction)
